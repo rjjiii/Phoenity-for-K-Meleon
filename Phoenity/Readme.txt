@@ -1,13 +1,14 @@
-#######################################################################
-Phoenity from K-Meleon 1.5.4
-#######################################################################
+# ---------------------------------------------------------------------
+# Phoenity from K-Meleon 1.5.4 by Lim Chee Aun
+# ---------------------------------------------------------------------
 
 This is an updated version of the default skin from K-Meleon 1.5.4. The
-skin has a very minor update that changes the history command, because 
-since K-Meleon 1.6, history is handled with a macro. You can use this
+skin has a very minor update that changes the history command because 
+history is handled with a macro since K-Meleon 1.6. You can use this
 theme for your browser or you can use it as a template to create a new 
 theme. Even the most current versions of K-Meleon are still backwards 
-compatible with this format.
+compatible with this format. This theme contains updated comments for
+the current version of K-Meleon and additional explanatory comments.
 
 Thanks to Lim Chee Aun for the excellent icons. Thanks to Dorian and the
 other K-Meleon devs for creating the skinning system. Thanks to everyone
@@ -16,43 +17,54 @@ insight.
 
 
 
-#######################################################################
-1.	Components
-#######################################################################
+# ---------------------------------------------------------------------
+# 1.	Components
+# ---------------------------------------------------------------------
 	1.1. toolbars.cfg: This file is very flexible and allows you to 
-		 set up the icons and toolbars for K-Meleon. Beyond simply
-		 changing buttons, K-Meleon's skins can create an entire new
-		 layout and interface. There are comments in the config that
-		 explain how to modify and expand it.
-	1.2. menuicons.cfg: K-Meleon divides the menu.bmp file into many 
-		 16 pixel wide icons. The menuicons.cfg file contains a list
-		 the determines which command corresponds to each icon. It is 
-		 possible to make multiple lists for the same bitmap to assign
-		 one icon to multiple commands.
-	1.3. skin.js: K-Meleon skins can set user preferences to control 
-		 the appearance of the browser. These have the same syntax as
-		 the pref.js and user.js files the user's profile folder. The
-		 user.js file will always override both the skin and prefs.js.
-	1.4. graphical assets: All of the the other files in the Phoenity
-		 folder are graphical assets.
+	     set up the icons and toolbars for K-Meleon. Beyond simply
+	     changing buttons, K-Meleon's skins can create an entirely new
+	     layout and interface. There are comments in the config that
+	     explain how to modify and expand it.
+	1.2. menuicons.cfg: K-Meleon divides the bitmap files into many 
+	     16 pixel wide icons. The menuicons.cfg file contains a list
+	     that defines which command corresponds to each icon. It is 
+	     possible to make multiple lists for the same bitmap to assign
+	     one icon to multiple commands.
+	1.3. skin.js: This file is optional and can cause errors. Most 
+         skins do not need this. Skin.js allows skins to set user 
+         preferences. These have the same syntax as prefs.js and user.js
+         from the user's profile folder. The user.js file will always 
+         override both skin.js and prefs.js. Setting preferences this
+         way to manage toolbars is therefore only consistent on a fresh
+         profile or before a user moves or toggles any toolbars.
+	1.4. graphical assets: All of the the other files in the skin's
+	     folder are graphical assets. The following grapical assets 
+	     are not defined by a config but by K-Meleon:
+	     back.bmp,      boomarks.bmp,   bookmarks-edit.ico, default.ico
+	     favorites.bmp, history.bmp,    history-view.ico,   hotlist.bmp
+	     hotlist-edit.ico,              loading.ico,        main.ico
+	     throbber.avi,  sbroken.ico,    sinsecur.ico,       ssecur.ico
+         Note: Except for back.bmp, K-Meleon will use the file from the
+               default theme if images defined by either K-Meleon or 
+               toolbars.cfg are not present in a theme.
 
 
 
-#######################################################################
-2.	Copyright Information:
-#######################################################################
+# ---------------------------------------------------------------------
+# 2.	Copyright Information:
+# ---------------------------------------------------------------------
 
 The Phoenity icon set and the official Phoenity theme for K-Meleon were
 created by Lim Chee Aun © 2010. The theme and icons are available under
-the Attribution-Noncommercial 2.5 Generic license. The full text is
-posted below and at the following URL:
+the Creative Commons Attribution-Noncommercial 2.5 Generic license. 
+The full text is posted below and at the following URL:
 https://creativecommons.org/licenses/by-nc/2.5/legalcode
 
 
 
-#######################################################################
-2.1 Creative Commons Attribution-NonCommercial 2.5
-#######################################################################
+# ---------------------------------------------------------------------
+# 2.1 Creative Commons Attribution-NonCommercial 2.5
+# ---------------------------------------------------------------------
 
  CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE LEGAL SERVICES. DISTRIBUTION OF THIS LICENSE DOES NOT CREATE AN ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS INFORMATION ON AN "AS-IS" BASIS. CREATIVE COMMONS MAKES NO WARRANTIES REGARDING THE INFORMATION PROVIDED, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM ITS USE.
 
